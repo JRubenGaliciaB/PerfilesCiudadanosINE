@@ -1,2 +1,2 @@
 # GENERACIONES DEL VOTO
-#Ciencia de datos para descubrir los perfiles de participación electoral juvenil en México
+#Ciencia de datos para descubrir la participación electoral de las juventudes en México.
