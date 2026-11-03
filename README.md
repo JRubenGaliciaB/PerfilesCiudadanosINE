@@ -123,7 +123,7 @@ Consulta la plataforma y los materiales institucionales en el [micrositio del co
 
 Los archivos fuente se conservan sin modificación. El procedimiento:
 
-- Verifica sus huellas **SHA-256**.
+- Verifica **SHA-256**.
 - Registra problemas de cobertura y observaciones no disponibles.
 - No imputa datos faltantes.
 - Mantiene separados los originales y las salidas del análisis.
@@ -162,78 +162,6 @@ Se comparan métodos basados en centroides, agrupamiento jerárquico, grafos, mo
 
 Los scripts se encuentran en [`experimentos`](experimentos).
 
-## Reproducir el análisis
-
-### 1. Preparar el entorno
-
-El paquete indica **Python 3.11 o posterior**. Para reproducir los resultados se recomienda utilizar el entorno registrado en `validacion.json` y las versiones fijadas en `requirements.txt`.
-
-Desde la carpeta `generaciones/`:
-
-```bash
-python -m venv .venv
-```
-
-Activa el entorno.
-
-**Windows:**
-
-```powershell
-.venv\Scripts\Activate.ps1
-```
-
-**macOS o Linux:**
-
-```bash
-source .venv/bin/activate
-```
-
-Instala las dependencias:
-
-```bash
-python -m pip install -r requirements.txt
-```
-
-### 2. Preparar los archivos fuente
-
-Coloca los seis ZIP originales en una carpeta independiente de la carpeta de resultados. Las carpetas **no deben estar anidadas entre sí**.
-
-El ejecutor busca exactamente un archivo de Conteos Censales para cada año y comprueba que su huella coincide con la versión auditada.
-
-### 3. Verificar entradas y dependencias
-
-Este comando verifica los requisitos sin ajustar los modelos:
-
-```bash
-python ejecutar.py --input-dir "/ruta/originales" --output-dir "/ruta/resultados" --check
-```
-
-### 4. Ejecutar la cadena
-
-```bash
-python ejecutar.py --input-dir "/ruta/originales" --output-dir "/ruta/resultados" --resume
-```
-
-La salida final es:
-
-```text
-/ruta/resultados/explorador_generaciones.html
-```
-
-La cadena comienza en la etapa 02, que incorpora los modelos de nivel de la etapa 01 y los de forma de la etapa 02. El script `experimento_01.py` se conserva como antecedente autónomo.
-
-### 5. Reanudar una ejecución
-
-Repite el comando con `--resume`. Una etapa se reutiliza únicamente cuando coinciden las huellas del código, las entradas, el entorno y sus archivos de salida.
-
-Una etapa interrumpida se ejecuta nuevamente; no se reanuda dentro del ajuste de un modelo. Cada etapa conserva un archivo `ejecucion.log`.
-
-Para probar el control de reanudación:
-
-```bash
-python -m unittest test_ejecutar.py
-```
-
 
 ## Límites de interpretación
 
@@ -241,7 +169,6 @@ python -m unittest test_ejecutar.py
 - El análisis no separa causalmente los efectos de edad, periodo y generación.
 - Los promedios de perfil dan igual peso a las trayectorias; no son tasas nacionales ponderadas por lista nominal.
 - La coincidencia territorial o temporal no demuestra causas compartidas.
-- La concordancia con una regla descriptiva no equivale a exactitud de clasificación.
 - Una segmentación descriptiva útil no garantiza capacidad predictiva.
 
 
