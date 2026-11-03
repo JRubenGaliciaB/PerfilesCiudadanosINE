@@ -1,7 +1,7 @@
 # GENERACIONES DEL VOTO
 #Ciencia de datos para descubrir la participación electoral de las juventudes en México.
 
-**[EXPLORA EL PROYECTO](generaciones_del_voto.html)** · **[ABRE EL MAPA](mapa_perfiles_municipales.html)** · **[CONSULTA LOS PERFILES](explorador_generaciones.html)** · **[EXPLORA EL CÓDIGO](experimentos/)**
+**[EXPLORA EL PROYECTO](explorador_generaciones_rev1.html)** · **[ABRE EL MAPA](mapa_perfiles_municipales.html)** · **[CONSULTA LOS PERFILES](explorador_generaciones_rev1.html)** · **[EXPLORA EL CÓDIGO](experimentos/)**
 
 **¿Qué oculta un promedio de participación electoral?**
 
@@ -17,7 +17,7 @@ Desarrollado por el equipo **Gen Zivic-IA** para el Reto 1, *Perfiles ciudadanos
 
 ### Una historia interactiva del proyecto
 
-Abre [`generaciones_del_voto.html`](generaciones_del_voto.html) para recorrer la pregunta de investigación, el seguimiento de generaciones y los resultados.
+Abre [`explorador_generaciones_rev1.html`](explorador_generaciones_rev1.html) para recorrer la pregunta de investigación, el seguimiento de generaciones y los resultados.
 
 - **Desplázate** para descubrir las distintas secciones.
 - **Mueve el año** para observar cómo cambia la edad de una cohorte.
