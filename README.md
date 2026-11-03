@@ -160,7 +160,7 @@ Se comparan métodos basados en centroides, agrupamiento jerárquico, grafos, mo
 | `cerrar_conclusiones.py` | Integración de resultados y conclusiones. |
 | `revisar_casos.py` | Revisión de trayectorias, ejemplos, excepciones y asignaciones débiles. |
 
-Los scripts se encuentran en [`generaciones/scripts/`](generaciones/scripts/).
+Los scripts se encuentran en [`experimentos`](experimentos).
 
 ## Reproducir el análisis
 
