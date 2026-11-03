@@ -1,7 +1,7 @@
 # GENERACIONES DEL VOTO
 #Ciencia de datos para descubrir la participación electoral de las juventudes en México.
 
-**[EXPLORA EL PROYECTO](generaciones_del_voto.html)** · **[ABRE EL MAPA](mapa_perfiles_municipales.html)** · **[CONSULTA LOS PERFILES](explorador_generaciones.html)** · **[EXPLORA EL CÓDIGO](generaciones/scripts/)**
+**[EXPLORA EL PROYECTO](generaciones_del_voto.html)** · **[ABRE EL MAPA](mapa_perfiles_municipales.html)** · **[CONSULTA LOS PERFILES](explorador_generaciones.html)** · **[EXPLORA EL CÓDIGO](experimentos/)**
 
 **¿Qué oculta un promedio de participación electoral?**
 
