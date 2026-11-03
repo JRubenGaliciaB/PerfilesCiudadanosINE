@@ -153,15 +153,7 @@ Se comparan métodos basados en centroides, agrupamiento jerárquico, grafos, mo
 
 | Archivo | Propósito principal |
 |---|---|
-| `experimento_01.py` | Agrupamiento de trayectorias por nivel de participación. |
-| `experimento_02.py` | Comparación de agrupamientos por nivel y forma temporal. |
-| `experimento_03.py` | Agrupamiento basado en grafos. |
-| `experimento_04.py` | Modelos probabilísticos y comparación entre familias de métodos. |
-| `experimento_05.py` | Análisis temporal descriptivo. |
-| `experimento_06.py` | Exploración de representación profunda y DEC. |
-| `experimento_07.py` | Construcción del catálogo y análisis del respaldo de pertenencia. |
-| `experimento_08.py` | Comparación de familias entre cohortes. |
-| `experimento_09.py` | Exploración de coincidencias territoriales. |
+
 | `experimento_10.py` | Evaluación retrospectiva con información hasta 2021 y observación de 2024. |
 | `definir_perfiles.py` | Síntesis de las variantes en cinco perfiles descriptivos. |
 | `resultados_perfiles.py` | Comparaciones generacionales, territoriales y entre casos. |
