@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generaciones del voto · evaluación retrospectiva con corte temporal.
+"""Generaciones del voto 10 · evaluación retrospectiva con corte temporal.
 
 pip install numpy scipy scikit-learn threadpoolctl
 
@@ -79,7 +79,6 @@ def run(data):
     for c in range(4):
         for sex in range(2):
             rs=prefix_records(data,c,sex);P=np.array([[100*x[1]/x[0] for x in r['counts'][:5]] for r in rs]);models,predictions=fit_prefix(P)
-            # Do not access2024 until the prefix fit and all predictions are frozen.
             Y=np.array([100*r['counts'][5][1]/r['counts'][5][0] if r['counts'][5] is not None else np.nan for r in rs]);valid=np.isfinite(Y);pred=np.column_stack([predictions[id] for id,_ in METHODS]);states=np.array([r['ed'] for r in rs]);unique_states=np.unique(states[valid]);rng=np.random.default_rng(SEED+c*2+sex);bw=rng.multinomial(len(unique_states),np.full(len(unique_states),1/len(unique_states)),size=BOOTSTRAPS)
             metrics=assess(pred[valid],Y[valid],states[valid],bw)
             for m in models:
